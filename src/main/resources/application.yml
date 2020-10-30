@@ -1,0 +1,13 @@
+spring:
+  h2:
+    console:
+      enabled: true
+
+server:
+  port: 9199
+
+jwt:
+  secret:
+    my-super-secret-password
+  expiration:
+    60000
