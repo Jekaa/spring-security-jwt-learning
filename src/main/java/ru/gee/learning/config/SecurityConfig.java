@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new SCryptPasswordEncoder();
+        return new SCryptPasswordEncoder(16384, 8, 1, 3, 64);
     }
 
     @Bean(name = BeanIds.AUTHENTICATION_MANAGER)
